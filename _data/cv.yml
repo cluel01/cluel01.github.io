@@ -5,8 +5,8 @@
       institution: University of Münster, Germany
       year: 2020-present
       description:
-        - Advised by <a href="https://www.wi.uni-muenster.de/de/institut/dasc/personen/fabian-gieseke">Fabian Gieseke</a>
-        - "Thesis: Advancing Large-Scale Data Retrieval: A Co-Design Approach of Machine Learning and Indexing"
+        - Advised by <a href="https://www.wi.uni-muenster.de/de/institut/dasc/personen/fabian-gieseke">Prof. Fabian Gieseke</a>
+        - "Thesis: \"Advancing Large-Scale Data Retrieval: A Co-Design Approach of Machine Learning and Indexing\""
     - title: MSc in Information Systems
       institution: University of Münster, Germany
       year: 2018-2020
@@ -22,7 +22,7 @@
       year: 2014-2017
       description:
         - Thesis on continuous deployment with Kubernetes in the data center of a large banking platform provider
-        - Part of a integrated university program in cooperation with the Atruvia AG
+        - Part of an integrated university program in collaboration with Atruvia AG
     
 - title: Work Experience
   type: time_table
@@ -33,6 +33,6 @@
     - title: Linux System Engineer
       institution: Atruvia AG, Münster, Germany
       year: 2017-2020
-    - title: Integrated University Program (vocational training)
+    - title: Integrated University Program (Vocational Training)
       institution: Atruvia AG, Münster, Germany
       year: 2014-2017
