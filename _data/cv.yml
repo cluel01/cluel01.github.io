@@ -5,23 +5,23 @@
       institution: University of Münster, Germany
       year: 2020-present
       description:
-        - "Advised by <a href="https://www.wi.uni-muenster.de/de/institut/dasc/personen/fabian-gieseke">Fabian Gieseke</a>"
-        - "Thesis: Advancing Large-Scale Data Retrieval: A Co-Design Approach of Machine Learning and Indexing"
+        - Advised by <a href="https://www.wi.uni-muenster.de/de/institut/dasc/personen/fabian-gieseke">Fabian Gieseke</a>
+        - Thesis: "Advancing Large-Scale Data Retrieval: A Co-Design Approach of Machine Learning and Indexing"
     - title: MSc in Information Systems
       institution: University of Münster, Germany
       year: 2018-2020
       description:
-        - "Thesis on graph neural networks in the area of organic chemistry"
+        - Thesis on graph neural networks in the area of organic chemistry
     - title: Exchange Semester
       institution: University of Sydney, Australia
       year: Winter 2019
       description:
-        - "Courses in machine learning, cyber security and statistical modeling"
+        - Courses in machine learning, cyber security and statistical modeling
     - title: BSc in Information Systems
       institution: University of Applied Sciences Weserbergland, Germany
       year: 2014-2017
       description:
-        - "Thesis on continuous deployment with Kubernetes in the data center of a large banking provider."
+        - Thesis on continuous deployment with Kubernetes in the data center of a large banking provider.
     
 
 - title: Experience
