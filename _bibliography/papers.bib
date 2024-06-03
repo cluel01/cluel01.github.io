@@ -1,113 +1,72 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{vldb,
+author = {L\"{u}lf, Christian and Martins, Denis Mayr Lima and Salles, Marcos Antonio Vaz and Zhou, Yongluan and Gieseke, Fabian},
+title = {Fast Search-by-Classification for Large-Scale Databases Using Index-Aware Decision Trees and Random Forests},
+year = {2023},
+booktitle = {Proceedings of the VLDB Endowment},
+pages = {2845--2857},
+abstract = {The vast amounts of data collected in various domains pose great challenges to modern data exploration and analysis. To find "interesting" objects in large databases, users typically define a query using positive and negative example objects and train a classification model to identify the objects of interest in the entire data catalog. However, this approach requires a scan of all the data to apply the classification model to each instance in the data catalog, making this method prohibitively expensive to be employed in large-scale databases serving many users and queries interactively. In this work, we propose a novel framework for such search-by-classification scenarios that allows users to interactively search for target objects by specifying queries through a small set of positive and negative examples. Unlike previous approaches, our framework can rapidly answer such queries at low cost without scanning the entire database. Our framework is based on an index-aware construction scheme for decision trees and random forests that transforms the inference phase of these classification models into a set of range queries, which in turn can be efficiently executed by leveraging multidimensional indexing structures. Our experiments show that queries over large data catalogs with hundreds of millions of objects can be processed in a few seconds using a single server, compared to hours needed by classical scanning-based approaches.},
+bibtex_show={true},
+pdf={https://vldb.org/pvldb/vol16/p2845-lulf.pdf},
+code={https://github.com/decisionbranches/decisionbranches},
+preview={VLDB.png},
 }
 
-@book{einstein1956investigations,
+
+@inproceedings{sigir,
+author = {L\"{u}lf, Christian and Martins, Denis Mayr Lima and Salles, Marcos Antonio Vaz and Zhou, Yongluan and Gieseke, Fabian},
+title = {{CLIP-Branches}: Interactive Fine-Tuning for Text-Image Retrieval},
+year = {2024},
+booktitle    = {Proceedings of the 47th International {ACM} {SIGIR} Conference on
+                  Research and Development in Information Retrieval},
+note={Accepted (In press)},
+abstract={The advent of text-image models, most notably CLIP, has significantly transformed the landscape of information retrieval. These models enable the fusion of various modalities, such as text and images. One significant outcome of CLIP is its capability to allow users to search for images using text as a query, as well as vice versa. This is achieved via a joint embedding of images and text data that can, for instance, be used to search for similar items. Despite efficient query processing techniques such as approximate nearest neighbor search, the results may lack precision and completeness. We introduce CLIP-Branches, a novel text-image search engine built upon the CLIP architecture. Our approach enhances traditional text-image search engines by incorporating an interactive fine-tuning phase, which allows the user to further concretize the search query by iteratively defining positive and negative examples. Our framework involves training a classification model given the additional user feedback and essentially outputs all positively classified instances of the entire data catalog. By building upon recent techniques, this inference phase, however, is not implemented by scanning the entire data catalog, but by employing efficient index structures pre-built for the data. Our results show that the fine-tuned results can improve the initial search outputs in terms of relevance and accuracy while maintaining swift response times.},
+bibtex_show={true},
+code={https://github.com/cluel01/clip-branches},
+preview={SIGIR.png},
+video={https://youtu.be/lepPM3zi0l8},
+website={https://web.clip-branches.net/}
+}
+
+@inproceedings{esann,
+ author = {Lima Martins, Denis Mayr and Lülf, Christian and Gieseke, Fabian},
+  title = {End-to-End Neural Network Training for Hyperbox-Based Classification},
+  booktitle = {31st European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, {ESANN}},
+  year = {2023},
+  abstract={Hyperbox-based classification has been seen as a promising technique in which decisions on the data are represented as a series of orthogonal, multidimensional boxes (i.e., hyperboxes) that are often interpretable and human-readable. However, existing methods are no longer capable of efficiently handling the increasing volume of data many application domains face nowadays. We address this gap by proposing a novel, fully differentiable framework for hyperbox-based classification via neural networks. In contrast to previous work, our hyperbox models can be efficiently trained in an end-to-end fashion, which leads to significantly reduced training times and superior classification results.},
+  pdf={https://arxiv.org/pdf/2307.09269},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  code={https://github.com/mlde-ms/hypernn},
+  preview={ESANN.png},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{sigspatial,
+author = {L\"{u}lf, Christian and Martins, Denis Mayr Lima and Salles, Marcos Antonio Vaz and Zhou, Yongluan and Gieseke, Fabian},
+title = {{Rapid-Earth}: A Search-by-Classification Engine for Large-Scale Geospatial Imagery},
+year = {2023},
+booktitle = {Proceedings of the 31st ACM International Conference on Advances in Geographic Information Systems},
+articleno = {58},
+numpages = {4},
+abstract = {Data exploration and analysis in various domains often necessitate the search for specific objects in massive databases. A common search strategy, often known as search-by-classification, resorts to training machine learning models on small sets of positive and negative samples and to performing inference on the entire database to discover additional objects of interest. While such an approach often yields very good results in terms of classification performance, the entire database usually needs to be scanned, a process that can easily take several hours even for medium-sized data catalogs. In this work, we present RapidEarth, a geospatial search-by-classification engine that allows analysts to rapidly search for interesting objects in very large data collections of satellite imagery in a matter of seconds, without the need to scan the entire data catalog. RapidEarth embodies a co-design of multidimensional indexing structures and decision branches, a recently proposed variant of classical decision trees. These decision branches allow RapidEarth to transform the inference phase into a set of range queries, which can be efficiently processed by leveraging the aforementioned multidimensional indexing structures. The main contribution of this work is a geospatial search engine that implements these technical findings.},
+code={https://github.com/decisionbranches/rapidearth},
+preview={SIGSPATIAL.png},
+video={https://youtu.be/jwS96I1qhU8},
+award={*This work was awarded with the **Best Demo Award** at the SIGSPATIAL conference 2023.*},
+award_name={Best Demo},
+bibtex_show={true},
+website={https://web.rapid.earth/},
+
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  selected={true}
+@article{neurocom,
+    author = {Lima Martins, Denis Mayr and Lülf, Christian and Gieseke, Fabian},
+    title = {Training Neural Networks End-to-End for Hyperbox-Based Classification},
+    journal = {Neurocomputing},
+    year = 2024,
+    note = {Accepted (In press)},
+    abstract={Modern decision-making requires the use of powerful algorithms to make sense of a variety of data. In this context, hyperbox induction has been seen as a promising technique in which decisions on the data are represented as a series of orthogonal, multidimensional boxes (i.e., hyperboxes) that are often interpretable and human-readable. However, existing hyperbox induction methods are no longer capable of efficiently handling the increasing volumes of data many application domains are confronted with. Moreover, current methods offer little to no control on specific properties of the induced box models, such as the number or the sizes of the hyperboxes. In this work, we propose a novel, fully differentiable framework for hyperbox induction that makes use of recent advancement in neural networks. In contrast to existing approaches, our hyperbox-based models can be trained in an end-to-end fashion, which leads to significantly reduced training times and superior classification results.},
+    bibtex_show={true},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}
