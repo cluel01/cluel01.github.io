@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-PhD thesis sucessfully submitted
+PhD thesis sucessfully submitted!
