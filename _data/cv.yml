@@ -1,7 +1,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: PhD in Information Systems
       institution: University of Münster, Germany
       year: 2020-present
       description:
@@ -21,9 +21,10 @@
       institution: University of Applied Sciences Weserbergland, Germany
       year: 2014-2017
       description:
-        - Thesis on continuous deployment with Kubernetes in the data center of a large banking provider.
+        - Thesis on continuous deployment with Kubernetes in the data center of a large banking platform provider
+        - Part of a integrated university program in cooperation with the Atruvia AG
     
-- title: Experience
+- title: Work Experience
   type: time_table
   contents:
     - title: Doctoral Researcher
@@ -31,4 +32,7 @@
       year: 2020 - present
     - title: Linux System Engineer
       institution: Atruvia AG, Münster, Germany
-      year: 2014-2020
+      year: 2017-2020
+    - title: Integrated University Program (vocational training)
+      institution: Atruvia AG, Münster, Germany
+      year: 2014-2017
