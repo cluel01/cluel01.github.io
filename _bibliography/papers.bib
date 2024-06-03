@@ -1,5 +1,20 @@
 ---
 ---
+@inproceedings{sigir,
+author = {L\"{u}lf, Christian and Martins, Denis Mayr Lima and Salles, Marcos Antonio Vaz and Zhou, Yongluan and Gieseke, Fabian},
+title = {{CLIP-Branches}: Interactive Fine-Tuning for Text-Image Retrieval},
+year = {2024},
+booktitle    = {Proceedings of the 47th International {ACM} {SIGIR} Conference on
+                  Research and Development in Information Retrieval, {SIGIR}},
+note={Accepted (In press)},
+abstract={The advent of text-image models, most notably CLIP, has significantly transformed the landscape of information retrieval. These models enable the fusion of various modalities, such as text and images. One significant outcome of CLIP is its capability to allow users to search for images using text as a query, as well as vice versa. This is achieved via a joint embedding of images and text data that can, for instance, be used to search for similar items. Despite efficient query processing techniques such as approximate nearest neighbor search, the results may lack precision and completeness. We introduce CLIP-Branches, a novel text-image search engine built upon the CLIP architecture. Our approach enhances traditional text-image search engines by incorporating an interactive fine-tuning phase, which allows the user to further concretize the search query by iteratively defining positive and negative examples. Our framework involves training a classification model given the additional user feedback and essentially outputs all positively classified instances of the entire data catalog. By building upon recent techniques, this inference phase, however, is not implemented by scanning the entire data catalog, but by employing efficient index structures pre-built for the data. Our results show that the fine-tuned results can improve the initial search outputs in terms of relevance and accuracy while maintaining swift response times.},
+bibtex_show={true},
+code={https://github.com/cluel01/clip-branches},
+preview={SIGIR.png},
+video={https://youtu.be/lepPM3zi0l8},
+website={https://web.clip-branches.net/},
+selected={true},
+}
 
 @inproceedings{vldb,
 author = {L\"{u}lf, Christian and Martins, Denis Mayr Lima and Salles, Marcos Antonio Vaz and Zhou, Yongluan and Gieseke, Fabian},
@@ -16,21 +31,24 @@ selected={true},
 }
 
 
-@inproceedings{sigir,
+@inproceedings{sigspatial,
 author = {L\"{u}lf, Christian and Martins, Denis Mayr Lima and Salles, Marcos Antonio Vaz and Zhou, Yongluan and Gieseke, Fabian},
-title = {{CLIP-Branches}: Interactive Fine-Tuning for Text-Image Retrieval},
-year = {2024},
-booktitle    = {Proceedings of the 47th International {ACM} {SIGIR} Conference on
-                  Research and Development in Information Retrieval},
-note={Accepted (In press)},
-abstract={The advent of text-image models, most notably CLIP, has significantly transformed the landscape of information retrieval. These models enable the fusion of various modalities, such as text and images. One significant outcome of CLIP is its capability to allow users to search for images using text as a query, as well as vice versa. This is achieved via a joint embedding of images and text data that can, for instance, be used to search for similar items. Despite efficient query processing techniques such as approximate nearest neighbor search, the results may lack precision and completeness. We introduce CLIP-Branches, a novel text-image search engine built upon the CLIP architecture. Our approach enhances traditional text-image search engines by incorporating an interactive fine-tuning phase, which allows the user to further concretize the search query by iteratively defining positive and negative examples. Our framework involves training a classification model given the additional user feedback and essentially outputs all positively classified instances of the entire data catalog. By building upon recent techniques, this inference phase, however, is not implemented by scanning the entire data catalog, but by employing efficient index structures pre-built for the data. Our results show that the fine-tuned results can improve the initial search outputs in terms of relevance and accuracy while maintaining swift response times.},
+title = {{Rapid-Earth}: A Search-by-Classification Engine for Large-Scale Geospatial Imagery},
+year = {2023},
+booktitle = {Proceedings of the 31st ACM International Conference on Advances in Geographic Information Systems, {SIGSPATIAL}},
+articleno = {58},
+numpages = {4},
+abstract = {Data exploration and analysis in various domains often necessitate the search for specific objects in massive databases. A common search strategy, often known as search-by-classification, resorts to training machine learning models on small sets of positive and negative samples and to performing inference on the entire database to discover additional objects of interest. While such an approach often yields very good results in terms of classification performance, the entire database usually needs to be scanned, a process that can easily take several hours even for medium-sized data catalogs. In this work, we present RapidEarth, a geospatial search-by-classification engine that allows analysts to rapidly search for interesting objects in very large data collections of satellite imagery in a matter of seconds, without the need to scan the entire data catalog. RapidEarth embodies a co-design of multidimensional indexing structures and decision branches, a recently proposed variant of classical decision trees. These decision branches allow RapidEarth to transform the inference phase into a set of range queries, which can be efficiently processed by leveraging the aforementioned multidimensional indexing structures. The main contribution of this work is a geospatial search engine that implements these technical findings.},
+code={https://github.com/decisionbranches/rapidearth},
+preview={SIGSPATIAL.png},
+video={https://youtu.be/jwS96I1qhU8},
+award={*This work was awarded with the **Best Demo Award** at the SIGSPATIAL conference 2023.*},
+award_name={Best Demo},
 bibtex_show={true},
-code={https://github.com/cluel01/clip-branches},
-preview={SIGIR.png},
-video={https://youtu.be/lepPM3zi0l8},
-website={https://web.clip-branches.net/},
+website={https://web.rapid.earth/},
 selected={true},
 }
+
 
 @inproceedings{esann,
  author = {Lima Martins, Denis Mayr and Lülf, Christian and Gieseke, Fabian},
@@ -45,23 +63,6 @@ selected={true},
 selected={true},
 }
 
-@inproceedings{sigspatial,
-author = {L\"{u}lf, Christian and Martins, Denis Mayr Lima and Salles, Marcos Antonio Vaz and Zhou, Yongluan and Gieseke, Fabian},
-title = {{Rapid-Earth}: A Search-by-Classification Engine for Large-Scale Geospatial Imagery},
-year = {2023},
-booktitle = {Proceedings of the 31st ACM International Conference on Advances in Geographic Information Systems},
-articleno = {58},
-numpages = {4},
-abstract = {Data exploration and analysis in various domains often necessitate the search for specific objects in massive databases. A common search strategy, often known as search-by-classification, resorts to training machine learning models on small sets of positive and negative samples and to performing inference on the entire database to discover additional objects of interest. While such an approach often yields very good results in terms of classification performance, the entire database usually needs to be scanned, a process that can easily take several hours even for medium-sized data catalogs. In this work, we present RapidEarth, a geospatial search-by-classification engine that allows analysts to rapidly search for interesting objects in very large data collections of satellite imagery in a matter of seconds, without the need to scan the entire data catalog. RapidEarth embodies a co-design of multidimensional indexing structures and decision branches, a recently proposed variant of classical decision trees. These decision branches allow RapidEarth to transform the inference phase into a set of range queries, which can be efficiently processed by leveraging the aforementioned multidimensional indexing structures. The main contribution of this work is a geospatial search engine that implements these technical findings.},
-code={https://github.com/decisionbranches/rapidearth},
-preview={SIGSPATIAL.png},
-video={https://youtu.be/jwS96I1qhU8},
-award={*This work was awarded with the **Best Demo Award** at the SIGSPATIAL conference 2023.*},
-award_name={Best Demo},
-bibtex_show={true},
-website={https://web.rapid.earth/},
-selected={true},
-}
 
 @article{neurocom,
     author = {Lima Martins, Denis Mayr and Lülf, Christian and Gieseke, Fabian},
