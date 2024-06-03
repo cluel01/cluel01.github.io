@@ -6,7 +6,7 @@
       year: 2020-present
       description:
         - Advised by <a href="https://www.wi.uni-muenster.de/de/institut/dasc/personen/fabian-gieseke">Fabian Gieseke</a>
-        - Thesis: "Advancing Large-Scale Data Retrieval: A Co-Design Approach of Machine Learning and Indexing"
+        - "Thesis: Advancing Large-Scale Data Retrieval: A Co-Design Approach of Machine Learning and Indexing"
     - title: MSc in Information Systems
       institution: University of Münster, Germany
       year: 2018-2020
@@ -23,7 +23,6 @@
       description:
         - Thesis on continuous deployment with Kubernetes in the data center of a large banking provider.
     
-
 - title: Experience
   type: time_table
   contents:
