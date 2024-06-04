@@ -42,3 +42,9 @@ A demo how to use CLIP-Branches can be found in the following video:
 
 
 Come on and try it out yourself via the following <a href="https://web.clip-branches.net">link</a>.
+
+## References
+<div class="publications">
+  {% bibliography -f papers -q @*[key=sigir]* %}
+  {% bibliography -f papers -q @*[key=vldb]* %}
+</div>

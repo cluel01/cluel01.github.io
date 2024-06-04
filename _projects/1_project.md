@@ -5,7 +5,7 @@ description: A Geospatial Searchengine
 img: assets/img/rapidearth/search_engine1.png
 importance: 1
 # category: work
-related_publications: true
+# related_publications: true
 ---
 Data exploration and analysis in various domains often necessitate the search for specific objects in massive databases. A common search strategy, often known as search-by-classification, resorts to training machine learning models on small sets of positive and negative samples and to performing inference on the entire database to discover additional objects of interest. While such an approach often yields very good results in terms of classification performance, the entire database usually needs to be scanned, a process that can easily take several hours even for medium-sized data catalogs. In this work, we present RapidEarth, a geospatial search-by-classification engine that allows analysts to rapidly search for interesting objects in very large data collections of satellite imagery in a matter of seconds, without the need to scan the entire data catalog. RapidEarth embodies a co-design of multidimensional indexing structures and decision branches, a recently proposed variant of classical decision trees. These decision branches allow RapidEarth to transform the inference phase into a set of range queries, which can be efficiently processed by leveraging the  forementioned multidimensional indexing structures. The main contribution of this work is a geospatial search engine that implements these technical findings.
 
@@ -42,3 +42,9 @@ A demo how to use RapidEarth can be found in the following video:
 
 
 Come on and try it out yourself via the following <a href="https://web.rapid.earth">link</a>.
+
+## References
+<div class="publications">
+  {% bibliography -f papers -q @*[key=sigspatial]* %}
+  {% bibliography -f papers -q @*[key=vldb]* %}
+</div>
