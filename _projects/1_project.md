@@ -26,7 +26,7 @@ The results of the entire dataset can be inspected by navigating over the map:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/rapidearth/search_engine2.png" title="Results on Map" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/rapidearth/search_engine3.png" title="Results on Map" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <!-- <div class="caption">
