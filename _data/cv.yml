@@ -28,11 +28,15 @@
   type: time_table
   contents:
     - title: Doctoral Researcher
-      institution: Lab of Machine Learning and Data Engineering, University of Münster, Germany
+      institution: Lab of <a href="https://www.wi.uni-muenster.de/de/institut/dasc">Machine Learning and Data Engineering</a>, University of Münster, Germany
       year: 2020 - present
     - title: Linux System Engineer
       institution: Atruvia AG, Münster, Germany
       year: 2017-2020
-    - title: Integrated University Program (Vocational Training)
+      description:
+        - Involved in projects for establishing a container platform for banking applications
+    - title: Integrated University Program 
       institution: Atruvia AG, Münster, Germany
       year: 2014-2017
+      description:
+        - Vocational training as part of an integrated university program
