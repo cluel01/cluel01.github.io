@@ -46,5 +46,5 @@ Come on and try it out yourself via the following <a href="https://web.rapid.ear
 ## References
 <div class="publications">
   {% bibliography -f papers -q @*[key=sigspatial]* %}
-  {% bibliography -f papers -q @*[key=vldb]* %}
+  <!-- {% bibliography -f papers -q @*[key=vldb]* %} -->
 </div>
