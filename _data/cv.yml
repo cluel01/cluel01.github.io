@@ -27,9 +27,12 @@
 - title: Work Experience
   type: time_table
   contents:
-    - title: Doctoral Researcher
+    - title: Research Assistant
       institution: Lab of <a href="https://www.wi.uni-muenster.de/de/institut/dasc">Machine Learning and Data Engineering</a>, University of Münster, Germany
       year: 2020 - present
+      description:
+        - Conducted extensive research resulting into multiple publications
+        - Delivered lectures and supervised bachelor/master theses
     - title: Linux System Engineer
       institution: Atruvia AG, Münster, Germany
       year: 2017-2020
