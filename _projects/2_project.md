@@ -3,7 +3,7 @@ layout: page
 title: CLIP-Branches
 description: Interactive Text-Image Search Engine
 img: assets/img/clip-branches/Demo3.png
-importance: 2
+importance: 3
 # category: work
 # giscus_comments: true
 ---
@@ -46,5 +46,4 @@ Come on and try it out yourself via the following <a href="https://web.clip-bran
 ## References
 <div class="publications">
   {% bibliography -f papers -q @*[key=sigir]* %}
-  {% bibliography -f papers -q @*[key=vldb]* %}
 </div>

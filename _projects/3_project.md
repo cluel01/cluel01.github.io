@@ -3,7 +3,7 @@ layout: page
 title: Detection of Trees in South Africa
 description: Using Deep Learning
 img: assets/img/sa/SA_mask.png
-importance: 3
+importance: 4
 # category: work
 ---
 
@@ -39,4 +39,4 @@ The trained model was then applied on the entire dataset to create a tree cover 
     Tree cover map of South Africa from aerial imagery. Map is created in 100m resolution. The bright areas indicate tree covered regions.
 </div>
 
-
+The code for this project is stored in the following <a href="https://github.com/cluel01/SA_semantic_segmentation">Github repository</a>.

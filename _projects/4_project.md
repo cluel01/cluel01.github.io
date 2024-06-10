@@ -3,12 +3,12 @@ layout: page
 title: Graph Neural Networks 
 description: For Predicting Molecule Properties
 img: assets/img/gnn/MT_2.png
-importance: 4
+importance: 7
 # category: work
 # giscus_comments: true
 ---
 
-Over the last years, deep neural networks (NN) became the de-facto standard in machine learning (ML) for solving nearly every complex learning tasks. While they have found application in areas like natural language processing or image recognition, they are still in its infancy for areas with graph-structured data. Here, the development on graph-based tasks has hesitated in contrast to other areas in ML since typical components from deep neural architectures like convolutions can not directly be utilized on graph data. However, the demand for deep neural-based solutions on graph structures like molecules or networks has never ceased as they are expected to strongly improve the results of currently applied methods.
+This project summarizes the work of my master thesis. Over the last years, deep neural networks (NN) became the de-facto standard in machine learning (ML) for solving nearly every complex learning tasks. While they have found application in areas like natural language processing or image recognition, they are still in its infancy for areas with graph-structured data. Here, the development on graph-based tasks has hesitated in contrast to other areas in ML since typical components from deep neural architectures like convolutions can not directly be utilized on graph data. However, the demand for deep neural-based solutions on graph structures like molecules or networks has never ceased as they are expected to strongly improve the results of currently applied methods.
 
 Inspired by classic NNs, graph neural networks (GNN) were introduced for processing and predicting graph-structured data in neural architectures. By adapting
 conventional NN components for the graph domain, GNNs are capable of learning patterns based on the graph structure. Unlike prevalent methods like network or

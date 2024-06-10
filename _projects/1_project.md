@@ -3,7 +3,7 @@ layout: page
 title: RapidEarth
 description: A Geospatial Searchengine
 img: assets/img/rapidearth/search_engine1.png
-importance: 1
+importance: 2
 # category: work
 # related_publications: true
 ---
