@@ -2,7 +2,7 @@
 layout: page
 title: Decision Branches
 description: Novel Machine Learning Model For Efficient Search
-img: assets/img/publication_preview/VLDB.png
+img: assets/img/decisionbranches/VLDB_workflow.png
 importance: 1
 # category: work
 # related_publications: true
