@@ -11,7 +11,7 @@ The vast amounts of data collected in various domains pose great challenges to m
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/decisionbranches/VLDB_framework.png" title="Framework" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/decisionbranches/VLDB_Framework.png" title="Framework" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
